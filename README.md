@@ -13,6 +13,7 @@ Add deposit, Make a payment, Access the Ledger and exit.
 
 
 
+
 LEDGER SCREEN
 When a user selects "L" for Ledger, the LedgerScreen is then accessed. The user has these features to display: 
 All transactions, Deposits, Payments, Reports and to return to the HomeScreen.
