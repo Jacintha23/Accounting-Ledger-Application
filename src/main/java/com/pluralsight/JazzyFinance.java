@@ -120,7 +120,7 @@ public class JazzyFinance {
     // ================= LEDGER =================
     public static void ledgerScreen() {
         while (true) {
-            System.out.println("\n--- LEDGER ---");
+            System.out.println("Welcome to the Ledger Screen");
             System.out.println("A) All");
             System.out.println("D) Deposits");
             System.out.println("P) Payments");
@@ -174,7 +174,7 @@ public class JazzyFinance {
     // ================= REPORTS =================
     public static void reportsScreen() {
         while (true) {
-            System.out.println("\n--- REPORTS ---");
+            System.out.println("Welcome to the Reports Screen");
             System.out.println("1) Month To Date");
             System.out.println("2) Previous Month");
             System.out.println("3) Year To Date");
