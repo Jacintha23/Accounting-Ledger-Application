@@ -1,41 +1,49 @@
 package com.pluralsight;
 
+import java.io.*;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class JazzyFinance
-{
-   // static ArrayList<Ledger> ledgers;
-  //static HashMap
+public class JazzyFinance {
     static Scanner scanner = new Scanner(System.in);
+    static ArrayList<String> transactions = new ArrayList<>();
+    static final String FILE_NAME = "transactions.csv";
 
-    static void main()
-    {
+    public static void main(String[] args) {  // Fixed: added 'public static'
         homeScreen();
     }
-    public static void homeScreen()
-    //List out the greeting and options
-    //Be sure to make a scanner function for the users input!
-    {
-        System.out.println("---------------------------------------");
-        System.out.println("Hello, what transaction would you like to make today?");
-        System.out.println("---------------------------------------");
-        System.out.println("D) Add Deposit "); /* prompt user for the deposit information
-                                                and save it to the csv file */
-        System.out.println("P) Make Payment (Debit)"); /* prompt user for the debit information
-                                                        and save it to the csv file */
-        System.out.println("L) Ledger");
-        System.out.println("X) Exit");
-        String choice = scanner.nextLine().toUpperCase().strip();
 
-        System.out.println(choice);
+    public static void homeScreen() {
+        while (true) {
+            System.out.println("---------------------------------------");
+            System.out.println("Hello, what transaction would you like to make today?");
+            System.out.println("D) Add Deposit");
+            System.out.println("P) Make Payment (Debit)");
+            System.out.println("L) Ledger");
+            System.out.println("X) Exit");
+            System.out.println("---------------------------------------");
+            System.out.println("Make a selection (D, P, L, OR X):");
+
+            String choice = scanner.nextLine().strip().toUpperCase();
+
+            switch (choice) {
+                case "D":
+                    addDeposit();  // Fixed: moved method call inside switch
+                    break;
+                case "P":
+                    addPayment();  // Fixed: moved method call inside switch
+                    break;
+                case "L":
+                    ledgerScreen();
+                    break;
+                case "X":
+                    System.out.println("Thank you, see you next time!");
+            }
+        }
+
     }
-
-// Map out Arraylist method/function
-/*
-
- */
-
-
 }
+

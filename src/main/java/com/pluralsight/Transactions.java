@@ -3,15 +3,15 @@ package com.pluralsight;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-    public class Ledger
+    public class Transactions
 {
         private LocalDate date;
         private LocalTime time;
         private String description;
         private String vendor;
-        private Double amount;
+        private Double amount = 5103.8;
 
-    public Ledger(LocalDate date, LocalTime time, String description, String vendor, Double amount)
+    public Transactions(LocalDate date, LocalTime time, String description, String vendor, Double amount)
     {
         this.date = date;
         this.time = time;
