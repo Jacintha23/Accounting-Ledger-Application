@@ -81,7 +81,7 @@ public class JazzyFinance {
         }
     }
 
-    // ================= ADD DEPOSIT =================
+    // Add deposit section
     public static void addDeposit() {
         System.out.print("Purpose: ");
         String desc = scanner.nextLine();
@@ -98,7 +98,7 @@ public class JazzyFinance {
         saveTransaction(t);
     }
 
-    // ================= ADD PAYMENT =================
+    // Add payment section
     public static void addPayment() {
         System.out.print("Purpose: ");
         String desc = scanner.nextLine();
@@ -117,7 +117,7 @@ public class JazzyFinance {
         saveTransaction(t);
     }
 
-    // ================= LEDGER =================
+    // Add Ledger Screen
     public static void ledgerScreen() {
         while (true) {
             System.out.println("Welcome to the Ledger Screen");
@@ -148,7 +148,7 @@ public class JazzyFinance {
         }
     }
 
-    // ================= DISPLAY =================
+    // Display transactions here
     public static void displayTransactions(ArrayList<Transaction> list) {
         for (int i = list.size() - 1; i >= 0; i--) {
             System.out.println(list.get(i));
@@ -171,7 +171,7 @@ public class JazzyFinance {
         }
     }
 
-    // ================= REPORTS =================
+    // Create a Reports Screen
     public static void reportsScreen() {
         while (true) {
             System.out.println("Welcome to the Reports Screen");
@@ -269,8 +269,10 @@ public class JazzyFinance {
         }
     }
 }
+/////////////////////////////////////////////////////////////////////////////////////////
 
-// ================= TRANSACTION CLASS =================
+
+// Transaction class
 class Transaction {
     LocalDate date;
     LocalTime time;
