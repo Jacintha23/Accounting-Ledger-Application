@@ -1,4 +1,3 @@
-date,time,description,vendor,amount
 2023-04-15,10:13:25,ergonomic keyboard,Amazon,-89.5
 2023-04-15,11:15:00,Invoice 1001 paid,Joe,1500.0
 2023-04-16,08:30:15,coffee and pastry,Starbucks,-12.75
@@ -14,3 +13,4 @@ date,time,description,vendor,amount
 2023-04-21,11:30:15,monthly salary,ABC Corp,3200.0
 2023-04-21,14:45:00,internet bill,Comcast,-89.99
 2023-04-22,09:15:30,parking fee,City Parking,-8.0
+2026-05-01,03:33:04.915525,phone bill,ATT,50.0
